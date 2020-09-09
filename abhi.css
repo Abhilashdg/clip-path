@@ -1,0 +1,42 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    font-family: fantasy;
+    background: #14d45e;
+}
+
+.menu ul{
+    display: grid;
+    grid-template-columns: repeat(3,4fr);
+    background: linear-gradient(rgb(156, 29, 29),rgb(22, 224, 100));
+    border-radius: 5px;
+    padding: 24px;
+}
+
+.menu ul li{
+    padding: 24px;
+    margin: 12px;
+    background: rgb(75, 75, 224);
+    border-radius: 50%;
+    color: rgb(218, 52, 162);
+}
+
+.menu{
+    clip-path: circle(24px at 20px 28px);
+    transition: clip-path .8s ease-in-out;
+}
+
+.menu:hover{
+    clip-path: circle(70% );
+    cursor:pointer;
+}
+ 
